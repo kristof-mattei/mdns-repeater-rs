@@ -1,37 +1,35 @@
 {
-  "name": "endless-ssh-rs",
+  "name": "mdns-repeater-rs",
   "version": "0.0.0-development",
   "description": "It's written in Rust!",
   "main": "src/main.rs",
   "scripts": {
-    "prettier": "prettier -w \"**/*.{yml,yaml}\"",
+    "prettier": "prettier --write .",
     "release": "semantic-release"
   },
   "engines": {
-    "node": ">=v18.14.1",
-    "npm": ">=9.5.0"
+    "node": ">=20.12.2",
+    "npm": ">=10.5.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kristof-mattei/endless-ssh-rs.git"
+    "url": "https://github.com/kristof-mattei/mdns-repeater-rs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kristof-mattei/endless-ssh-rs/issues"
+    "url": "https://github.com/kristof-mattei/mdns-repeater-rs/issues"
   },
-  "homepage": "https://github.com/kristof-mattei/endless-ssh-rs#readme",
+  "homepage": "https://github.com/kristof-mattei/mdns-repeater-rs#readme",
   "devDependencies": {
-    "@actions/tool-cache": "^2.0.1",
-    "@semantic-release/changelog": "^6.0.2",
-    "@semantic-release/commit-analyzer": "^9.0.2",
-    "@semantic-release/github": "^8.0.7",
-    "@semantic-release/release-notes-generator": "^10.0.3",
-    "conventional-changelog-conventionalcommits": "^5.0.0",
-    "prettier": "^2.8.4",
-    "semantic-release": "^20.1.0",
-    "semver": "^7.3.8",
-    "serialize-error": "^11.0.0"
+    "@actions/tool-cache": "2.0.1",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "12.0.0",
+    "@semantic-release/github": "10.0.3",
+    "@semantic-release/release-notes-generator": "13.0.0",
+    "conventional-changelog-conventionalcommits": "7.0.2",
+    "prettier": "3.2.5",
+    "semantic-release": "23.0.8"
   },
   "publishConfig": {
     "access": "restricted"

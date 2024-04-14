@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'endless-ssh-rs'",
+            "name": "Debug executable 'mdns-repeater-rs'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=endless-ssh-rs",
-                    "--package=endless-ssh-rs"
+                    "--bin=mdns-repeater-rs",
+                    "--package=mdns-repeater-rs"
                 ],
                 "filter": {
-                    "name": "endless-ssh-rs",
+                    "name": "mdns-repeater-rs",
                     "kind": "bin"
                 }
             },
@@ -23,70 +23,68 @@
             "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
-                "RUST_LOG": "endless_ssh_rs=trace"
-            }
+                "RUST_LOG": "DEBUG,mdns_repeater_rs=TRACE"
+            },
+            "internalConsoleOptions": "openOnSessionStart",
+            "terminal": "console"
         },
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'endless-ssh-rs' wrong-params",
+            "name": "Debug executable 'mdns-repeater-rs' wrong-params",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=endless-ssh-rs",
-                    "--package=endless-ssh-rs"
+                    "--bin=mdns-repeater-rs",
+                    "--package=mdns-repeater-rs"
                 ],
                 "filter": {
-                    "name": "endless-ssh-rs",
+                    "name": "mdns-repeater-rs",
                     "kind": "bin"
                 }
             },
-            "args": [
-                "wrong-params"
-            ],
+            "args": ["wrong-params"],
             "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
-                "RUST_LOG": "endless_ssh_rs=trace"
+                "RUST_LOG": "mdns_repeater_rs=trace"
             }
         },
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'endless-ssh-rs' help",
+            "name": "Debug executable 'mdns-repeater-rs' help",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=endless-ssh-rs",
-                    "--package=endless-ssh-rs"
+                    "--bin=mdns-repeater-rs",
+                    "--package=mdns-repeater-rs"
                 ],
                 "filter": {
-                    "name": "endless-ssh-rs",
+                    "name": "mdns-repeater-rs",
                     "kind": "bin"
                 }
             },
-            "args": [
-                "-h"
-            ],
+            "args": ["-h"],
             "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
-                "RUST_LOG": "endless_ssh_rs=trace"
+                "RUST_LOG": "mdns_repeater_rs=trace"
             }
         },
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'endless-ssh-rs'",
+            "name": "Debug unit tests in executable 'mdns-repeater-rs'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=endless-ssh-rs",
-                    "--package=endless-ssh-rs"
+                    "--bin=mdns-repeater-rs",
+                    "--package=mdns-repeater-rs"
                 ],
                 "filter": {
-                    "name": "endless-ssh-rs",
+                    "name": "mdns-repeater-rs",
                     "kind": "bin"
                 }
             },
@@ -94,8 +92,35 @@
             "cwd": "${workspaceFolder}",
             "env": {
                 "RUST_BACKTRACE": "1",
-                "RUST_LOG": "endless_ssh_rs=trace"
-            }
+                "RUST_LOG": "DEBUG,mdns_repeater_rs=TRACE"
+            },
+            "internalConsoleOptions": "openOnSessionStart",
+            "terminal": "console"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug integration test 'integration_tests'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--test=integration_tests",
+                    "--package=rust-end-to-end-application"
+                ],
+                "filter": {
+                    "name": "integration_tests",
+                    "kind": "test"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "RUST_BACKTRACE": "1",
+                "RUST_LOG": "DEBUG,mdns_repeater_rs=TRACE"
+            },
+            "internalConsoleOptions": "openOnSessionStart",
+            "terminal": "console"
         }
     ]
 }
