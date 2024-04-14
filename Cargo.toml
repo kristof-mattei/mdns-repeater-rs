@@ -21,7 +21,7 @@ anyhow = { version = "1.0.69", features = ["backtrace"] }
 clap = { version = "4.1.6", features = ["cargo"] }
 libc = "0.2.139"
 lazy_static = "1.4.0"
-mockall = "0.11.3"
+mockall = "0.12.1"
 mockall_double = "0.3.0"
 rand = "0.8.5"
 time = { version = "0.3.19", features = ["formatting"] }
