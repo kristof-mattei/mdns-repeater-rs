@@ -1,1 +1,1 @@
-# Endless ssh rs
+# mdns-repeater-rs
